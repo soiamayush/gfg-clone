@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
+   
+<!-- navbar -->
+   
+<nav class="bg-white px-2 sm:px-4 py-2.5 dark:bg-blue-600  w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+  <div class="container flex flex-wrap items-center justify-between mx-auto">
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto " id="navbar-sticky">
+      <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-blue-600 dark:border-gray-700">
+        <li>
+          <a href="#" class="block py-2 pl-3 pr-4 text-slate-100 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-slate-100 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" >Home</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 pl-3 pr-4 text-slate-100 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-slate-100 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 pl-3 pr-4 text-slate-100 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-slate-100 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 pl-3 pr-4 text-slate-100 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-slate-100 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+        </li>
+      </ul>
+    </div>
+ 
+
+  <a href="https://flowbite.com/" class="flex items-center">
+    <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo">
+</a>
+
+<div class="flex ">
+  <span class="material-symbols-outlined m-2 cursor-pointer">
+    search
+    </span>
+    <span class="material-symbols-outlined m-2 cursor-pointer">
+      g_translate
+      </span>
+  <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Sign in</button>
+  <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+    <span class="sr-only">Open main menu</span>
+    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+</button>
+</div>
+  </div>
+</nav>
+
+<!-- seARCH SECTION -->
+<div class="flex flex-col w-full h-fit bg-slate-300 p-8 py-24 gap-y-6">
+  <div class="font-bold text-3xl w-auto m-auto text-center">Hello, What Do You Want To Learn?</div>
+<form>
+  <div class="flex ">
+      <label for="search-dropdown" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Your Email</label>
+      <div class="relative sm:w-1/3 w-1/2 m-auto">
+          <input type="search" id="search-dropdown" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-r-lg border-l-gray-50 border-l-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-l-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" placeholder="" required>
+          <button type="submit" class="absolute top-0 right-0 p-2.5 text-sm font-medium text-white bg-blue-700 rounded-r-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><div class="text-md">search</div> 
+          </button>
+      </div>
+  </div>
+</form>
+
+<div class="  m-auto text-center">
+  <span
+    class="bg-slate-100 text-slate-500 text-xs mr-2 p-2 rounded whitespace-nowrap"
+    ><a href="./TutotrialPage.html" class="cursor-pointer">Complete interview preparation course</a></span
+  >
+  <span
+    class="bg-slate-100 text-slate-500 text-xs mr-2 p-2 rounded whitespace-nowrap"
+    ><a href="./TutotrialPage.html" class="cursor-pointer">Master Data Science and ML</a></span
+  ><span
+    class="bg-slate-100 text-slate-500 text-xs mr-2 p-2 rounded whitespace-nowrap"
+    ><a href="./TutotrialPage.html" class="cursor-pointer">Data Design-live classes</a></span
+  >
+</div>
+</div>
+
+<!-- for you section -->
+<div class="flex flex-col p-8">
+  <div class="text-3xl font-bold w-10/12 m-auto">For you</div>
+  <div class="flex flex-col md:flex-row gap-y-6 gap-x-4 w-10/12 m-auto my-8">
+    <div class="max-w-sm rounded-2xl overflow-hidden hover:shadow-xl m-auto cursor-pointer"><a href="./cardTitle.html">
+      <img class="w-full h-2/3" src="https://media.geeksforgeeks.org/auth-dashboard-uploads/read.png" alt="Sunset in the mountains">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">What is array?</div>
+        <p class="text-gray-700 text-base">
+          What is an array?An array is a collection of items of same data type stored at contiguous memory loc..
+        </p>
+      </div>
+    </a>
+    </div>
+  
+  
+    <div class="max-w-sm rounded-2xl overflow-hidden hover:shadow-xl m-auto cursor-pointer"><a href="./cardTitle.html">
+      <img class="w-full h-1/2" src="https://media.geeksforgeeks.org/auth-dashboard-uploads/practice.png" alt="Sunset in the mountains">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">Explore practise problems</div>
+        <p class="text-gray-700 text-base">
+          Solve DSA Problems. Filter based on topic tags and company tags. Get curated problem lists by GFG ex...
+        </p>
+      </div>
+    </a>
+    </div>
+  
+    <div class="max-w-sm rounded-2xl overflow-hidden hover:shadow-xl m-auto cursor-pointer"><a href="./cardTitle.html">
+      <img class="w-full h-1/2" src="https://media.geeksforgeeks.org/auth-dashboard-uploads/learn.png" alt="Sunset in the mountains">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">DSA self paced</div>
+        <p class="text-gray-700 text-base">
+          Most popular course on DSA trusted by over 75,000 students! Built with years of experience by indus...
+        </p>
+      </div>
+    </a>
+    </div>
+  </div>
+</div>
+
+    
+<!-- 100 days of code -->
+
+<div class="max-w-sm w-4/5 m-auto lg:max-w-full lg:flex py-4 rounded-2xl">
+  <div class="h-fit lg:h-auto lg:w-2/3 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('https://media.geeksforgeeks.org/wp-content/cdn-uploads/20201216211829/100-Days-of-Code-%E2%80%93-A-Complete-Guide-For-Beginners-and-Experienced.jpg')" title="Woman holding a mug">
+  </div>
+  <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+    <div class="mb-8">
+      <div class="text-gray-900 font-bold text-xl mb-2">100 Days of Code - A Complete Guide For Beginners and Experienced</div>
+      <p class="text-gray-700 text-base">Do you want to become a successful software developer and dreaming about getting into the big tech companies?Are you someone who is already working as a developer but look...</p>
+    </div>
+  </div>
+</div>
+
+<!-- courses -->
+
+<div class="w-full flex flex-col gap-y-12 my-16">
+  <div class="text-2xl font-bold mx-4">Courses</div>
+  <div class="flex flex-col md:flex-row gap-y-6 w-auto m-auto gap-x-12 justify-center px-4">
+  <div class="max-w-sm rounded-xl overflow-hidden cursor-pointer hover:shadow-xl">
+    <img class="full" src="https://media.geeksforgeeks.org/img-practice/banner/Java-backend-live-thumbnail.png?v=19404" alt="Sunset in the mountains">
+    <div class="px-2 py-2">
+        <div class="flex">
+          <img src="https://media.geeksforgeeks.org/img-practice/Group7622-1669294650.svg" alt="">
+          <span class="text-xs text-slate-600 leading-8">67k+ interested Geeks</span>
+      </div>
+      <div class="font-bold text-lg mb-2">Java backend-development Live</div>
+      <p class="text-gray-700 text-base">
+        Java backend-development Live
+      </p>
+      <div class="flex">
+        <img src="https://media.geeksforgeeks.org/img-practice/Levels-1669283463.svg" alt="">
+        <span class="text-xs text-slate-600 leading-8">Intermediate and Advnace</span>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="max-w-sm rounded-xl overflow-hidden cursor-pointer hover:shadow-xl">
+    <img class="11/12" src="https://media.geeksforgeeks.org/img-practice/banner/devops-live-thumbnail.png?v=19404" alt="Sunset in the mountains">
+    <div class="px-2 py-2">
+        <div class="flex">
+          <img src="https://media.geeksforgeeks.org/img-practice/Group7622-1669294650.svg" alt="">
+          <span class="text-xs text-slate-600 leading-8">67k+ interested Geeks</span>
+      </div>
+      <div class="font-bold text-lg mb-2">Java backend-development Live</div>
+      <p class="text-gray-700 text-base">
+        Java backend-development Live
+      </p>
+      <div class="flex">
+        <img src="https://media.geeksforgeeks.org/img-practice/Levels-1669283463.svg" alt="">
+        <span class="text-xs text-slate-600 leading-8">Intermediate and Advnace</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-sm rounded-xl overflow-hidden cursor-pointer hover:shadow-xl">
+    <img class="11/12" src="https://media.geeksforgeeks.org/img-practice/banner/dsa-self-paced-thumbnail.png?v=19404" alt="Sunset in the mountains">
+    <div class="px-2 py-2">
+        <div class="flex">
+          <img src="https://media.geeksforgeeks.org/img-practice/Group7622-1669294650.svg" alt="">
+          <span class="text-xs text-slate-600 leading-8">67k+ interested Geeks</span>
+      </div>
+      <div class="font-bold text-lg mb-2">Java backend-development Live</div>
+      <p class="text-gray-700 text-base">
+        Java backend-development Live
+      </p>
+      <div class="flex">
+        <img src="https://media.geeksforgeeks.org/img-practice/Levels-1669283463.svg" alt="">
+        <span class="text-xs text-slate-600 leading-8">Intermediate and Advnace</span>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!--  -->
+
+  <div class="flex flex-col md:flex-row w-auto m-auto gap-x-12 justify-center px-4">
+    <div class="max-w-sm rounded-xl overflow-hidden cursor-pointer hover:shadow-xl">
+      <img class="11/12" src="https://media.geeksforgeeks.org/img-practice/banner/Data-Structures-With-Python-thumbnail.png?v=19404" alt="Sunset in the mountains">
+      <div class="px-2 py-2">
+          <div class="flex">
+            <img src="https://media.geeksforgeeks.org/img-practice/Group7622-1669294650.svg" alt="">
+            <span class="text-xs text-slate-600 leading-8">67k+ interested Geeks</span>
+        </div>
+        <div class="font-bold text-lg mb-2">Java backend-development Live</div>
+        <p class="text-gray-700 text-base">
+          Java backend-development Live
+        </p>
+        <div class="flex">
+          <img src="https://media.geeksforgeeks.org/img-practice/Levels-1669283463.svg" alt="">
+          <span class="text-xs text-slate-600 leading-8">Intermediate and Advnace</span>
+        </div>
+      </div>
+    </div>
+  
+    
+    <div class="max-w-sm rounded-xl overflow-hidden cursor-pointer hover:shadow-xl">
+      <img class="11/12" src="https://media.geeksforgeeks.org/img-practice/banner/geeks-classes-live-thumbnail.png?v=19404" alt="Sunset in the mountains">
+      <div class="px-2 py-2">
+          <div class="flex">
+            <img src="https://media.geeksforgeeks.org/img-practice/Group7622-1669294650.svg" alt="">
+            <span class="text-xs text-slate-600 leading-8">67k+ interested Geeks</span>
+        </div>
+        <div class="font-bold text-lg mb-2">Java backend-development Live</div>
+        <p class="text-gray-700 text-base">
+          Java backend-development Live
+        </p>
+        <div class="flex">
+          <img src="https://media.geeksforgeeks.org/img-practice/Levels-1669283463.svg" alt="">
+          <span class="text-xs text-slate-600 leading-8">Intermediate and Advnace</span>
+        </div>
+      </div>
+    </div>
+  
+    
+    <div class="max-w-sm rounded-xl overflow-hidden cursor-pointer hover:shadow-xl">
+      <img class="11/12" src="https://media.geeksforgeeks.org/img-practice/banner/full-stack-node-thumbnail.png?v=19404" alt="Sunset in the mountains">
+      <div class="px-2 py-2">
+          <div class="flex">
+            <img src="https://media.geeksforgeeks.org/img-practice/Group7622-1669294650.svg" alt="">
+            <span class="text-xs text-slate-600 leading-8">67k+ interested Geeks</span>
+        </div>
+        <div class="font-bold text-lg mb-2">Java backend-development Live</div>
+        <p class="text-gray-700 text-base">
+          Java backend-development Live
+        </p>
+        <div class="flex">
+          <img src="https://media.geeksforgeeks.org/img-practice/Levels-1669283463.svg" alt="">
+          <span class="text-xs text-slate-600 leading-8">Intermediate and Advnace</span>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+
+<!-- problem fo the day -->
+<!-- <div class="">
+  <div class="max-w-sm w-full lg:max-w-full lg:flex">
+    <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('/img/card-left.jpg')" title="Woman holding a mug">
+    </div>
+    <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+      <div class="mb-8">
+        <p class="text-sm text-gray-600 flex items-center">
+          <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+          </svg>
+          Members only
+        </p>
+        <div class="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
+        <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+      </div>
+      <div class="flex items-center">
+        <img class="w-10 h-10 rounded-full mr-4" src="/img/jonathan.jpg" alt="Avatar of Jonathan Reinink">
+        <div class="text-sm">
+          <p class="text-gray-900 leading-none">Jonathan Reinink</p>
+          <p class="text-gray-600">Aug 18</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<!-- articles -->
+<div class="flex flex-col w-10/12 m-auto gap-y-8">
+  <div class="text-3xl font-bold">Articles</div>
+
+  <div class="w-auto m-auto text-center flex flex-wrap justify-center">
+    <span
+      class="bg-slate-100 text-slate-500 text-xs font-medium mr-2 mb-2 p-2 border border-black rounded cursor-pointer whitespace-nowrap "
+      >All</span
+    >
+    <span
+      class="bg-slate-100 text-slate-500 text-xs font-medium mr-2 p-2 mb-2 border border-black rounded cursor-pointer whitespace-nowrap "
+      >Python</span
+    ><span
+      class="bg-slate-100 text-slate-500 text-xs font-medium mr-2 p-2 mb-2 border border-black rounded cursor-pointer whitespace-nowrap "
+      >C++</span
+    ><span
+      class="bg-slate-100 text-slate-500 text-xs font-medium mr-2 p-2 mb-2 border border-black rounded cursor-pointer whitespace-nowrap"
+      >C#</span
+    ><span
+      class="bg-slate-100 text-slate-500 text-xs font-medium mr-2 p-2 mb-2 border border-black rounded cursor-pointer whitespace-nowrap"
+      >C language</span
+    ><span
+      class="bg-slate-100 text-slate-500 text-xs font-medium mr-2 p-2 mb-2 border border-black rounded cursor-pointer whitespace-nowrap"
+      >Algorithms</span
+    ><span
+      class="bg-slate-100 text-slate-500 text-xs font-medium mr-2 p-2 mb-2 border border-black rounded cursor-pointer whitespace-nowrap"
+      >Interview Experience</span
+    ><span
+      class="bg-slate-100 text-slate-500 text-xs font-medium mr-2 p-2 mb-2 border border-black rounded cursor-pointer whitespace-nowrap"
+      >Sorting</span
+    ><span
+      class="bg-slate-100 text-slate-500 text-xs font-medium mr-2 p-2 mb-2 border border-black rounded cursor-pointer whitespace-nowrap"
+      >linked list</span
+    ><span
+      class="bg-slate-100 text-slate-500 text-xs font-medium mr-2 p-2 mb-2 border border-black rounded cursor-pointer whitespace-nowrap"
+      >Graph</span
+    ><span
+      class="bg-slate-100 text-slate-500 text-xs font-medium mr-2 p-2 mb-2 border border-black rounded cursor-pointer whitespace-nowrap"
+      >Tree</span
+    >
+  </div>
+
+  <div class="flex flex-col gap-y-4">
+    <div class="border border-slate-300 rounded p-6 flex flex-col gap-y-8">
+      <div class="text-xl font-bold">What is an API (Application Programming Interface)?</div>
+      <div class="text-md">Everyone is in search of the highest-paying job so as to get into it. And, in the list, the web developer is on the top for years and will remain in the same place due to... <span class="text-blue-500 cursor-pointer hover:text-blue-600">Read more</span></div>
+      <div class="flex gap-x-4">
+        <span class="material-symbols-outlined text-blue-500 ">
+          sell
+          </span>
+          <span class="text-blue-500 cursor-pointer">G blog</span>
+      </div>
+    </div>
+    <div class="border border-slate-300 rounded p-6 flex flex-col gap-y-8">
+      <div class="text-xl font-bold">What is an API (Application Programming Interface)?</div>
+      <div class="text-md">Everyone is in search of the highest-paying job so as to get into it. And, in the list, the web developer is on the top for years and will remain in the same place due to... <span class="text-blue-500 cursor-pointer hover:text-blue-600">Read more</span></div>
+      <div class="flex gap-x-4">
+        <span class="material-symbols-outlined text-blue-500 ">
+          sell
+          </span>
+          <span class="text-blue-500 cursor-pointer">G blog</span>
+      </div>
+    </div>
+    <div class="border border-slate-300 rounded p-6 flex flex-col gap-y-8">
+      <div class="text-xl font-bold">What is an API (Application Programming Interface)?</div>
+      <div class="text-md">Everyone is in search of the highest-paying job so as to get into it. And, in the list, the web developer is on the top for years and will remain in the same place due to... <span class="text-blue-500 cursor-pointer hover:text-blue-600">Read more</span></div>
+      <div class="flex gap-x-4">
+        <span class="material-symbols-outlined text-blue-500 ">
+          sell
+          </span>
+          <span class="text-blue-500 cursor-pointer">G blog</span>
+      </div>
+    </div>
+    <div class="border border-slate-300 rounded p-6 flex flex-col gap-y-8">
+      <div class="text-xl font-bold">What is an API (Application Programming Interface)?</div>
+      <div class="text-md">Everyone is in search of the highest-paying job so as to get into it. And, in the list, the web developer is on the top for years and will remain in the same place due to... <span class="text-blue-500 cursor-pointer hover:text-blue-600">Read more</span></div>
+      <div class="flex gap-x-4">
+        <span class="material-symbols-outlined text-blue-500 ">
+          sell
+          </span>
+          <span class="text-blue-500 cursor-pointer">G blog</span>
+      </div>
+    </div>
+    <div class="border border-slate-300 rounded p-6 flex flex-col gap-y-8">
+      <div class="text-xl font-bold">What is an API (Application Programming Interface)?</div>
+      <div class="text-md">Everyone is in search of the highest-paying job so as to get into it. And, in the list, the web developer is on the top for years and will remain in the same place due to... <span class="text-blue-500 cursor-pointer hover:text-blue-600">Read more</span></div>
+      <div class="flex gap-x-4">
+        <span class="material-symbols-outlined text-blue-500 ">
+          sell
+          </span>
+          <span class="text-blue-500 cursor-pointer">G blog</span>
+      </div>
+    </div>
+    <div class="border border-slate-300 rounded p-6 flex flex-col gap-y-8">
+      <div class="text-xl font-bold">What is an API (Application Programming Interface)?</div>
+      <div class="text-md">Everyone is in search of the highest-paying job so as to get into it. And, in the list, the web developer is on the top for years and will remain in the same place due to... <span class="text-blue-500 cursor-pointer hover:text-blue-600">Read more</span></div>
+      <div class="flex gap-x-4">
+        <span class="material-symbols-outlined text-blue-500 ">
+          sell
+          </span>
+          <span class="text-blue-500 cursor-pointer">G blog</span>
+      </div>
+    </div>
+    <div class="border border-slate-300 rounded p-6 flex flex-col gap-y-8">
+      <div class="text-xl font-bold">What is an API (Application Programming Interface)?</div>
+      <div class="text-md">Everyone is in search of the highest-paying job so as to get into it. And, in the list, the web developer is on the top for years and will remain in the same place due to... <span class="text-blue-500 cursor-pointer hover:text-blue-600">Read more</span></div>
+      <div class="flex gap-x-4">
+        <span class="material-symbols-outlined text-blue-500 ">
+          sell
+          </span>
+          <span class="text-blue-500 cursor-pointer">G blog</span>
+      </div>
+    </div>
+    <div class="border border-slate-300 rounded p-6 flex flex-col gap-y-8">
+      <div class="text-xl font-bold">What is an API (Application Programming Interface)?</div>
+      <div class="text-md">Everyone is in search of the highest-paying job so as to get into it. And, in the list, the web developer is on the top for years and will remain in the same place due to... <span class="text-blue-500 cursor-pointer hover:text-blue-600">Read more</span></div>
+      <div class="flex gap-x-4">
+        <span class="material-symbols-outlined text-blue-500 ">
+          sell
+          </span>
+          <span class="text-blue-500 cursor-pointer">G blog</span>
+      </div>
+    </div>
+    <div class="border border-slate-300 rounded p-6 flex flex-col gap-y-8">
+      <div class="text-xl font-bold">What is an API (Application Programming Interface)?</div>
+      <div class="text-md">Everyone is in search of the highest-paying job so as to get into it. And, in the list, the web developer is on the top for years and will remain in the same place due to... <span class="text-blue-500 cursor-pointer hover:text-blue-600">Read more</span></div>
+      <div class="flex gap-x-4">
+        <span class="material-symbols-outlined text-blue-500 ">
+          sell
+          </span>
+          <span class="text-blue-500 cursor-pointer">G blog</span>
+      </div>
+    </div>
+    <div class="border border-slate-300 rounded p-6 flex flex-col gap-y-8">
+      <div class="text-xl font-bold">What is an API (Application Programming Interface)?</div>
+      <div class="text-md">Everyone is in search of the highest-paying job so as to get into it. And, in the list, the web developer is on the top for years and will remain in the same place due to... <span class="text-blue-500 cursor-pointer hover:text-blue-600">Read more</span></div>
+      <div class="flex gap-x-4">
+        <span class="material-symbols-outlined text-blue-500 ">
+          sell
+          </span>
+          <span class="text-blue-500 cursor-pointer">G blog</span>
+      </div>
+    </div>
+    <div class="border border-slate-300 rounded p-6 flex flex-col gap-y-8">
+      <div class="text-xl font-bold">What is an API (Application Programming Interface)?</div>
+      <div class="text-md">Everyone is in search of the highest-paying job so as to get into it. And, in the list, the web developer is on the top for years and will remain in the same place due to... <span class="text-blue-500 cursor-pointer hover:text-blue-600">Read more</span></div>
+      <div class="flex gap-x-4">
+        <span class="material-symbols-outlined text-blue-500 ">
+          sell
+          </span>
+          <span class="text-blue-500 cursor-pointer">G blog</span>
+      </div>
+    </div>
+    <div class="border border-slate-300 rounded p-6 flex flex-col gap-y-8">
+      <div class="text-xl font-bold">What is an API (Application Programming Interface)?</div>
+      <div class="text-md">Everyone is in search of the highest-paying job so as to get into it. And, in the list, the web developer is on the top for years and will remain in the same place due to... <span class="text-blue-500 cursor-pointer hover:text-blue-600">Read more</span></div>
+      <div class="flex gap-x-4">
+        <span class="material-symbols-outlined text-blue-500 ">
+          sell
+          </span>
+          <span class="text-blue-500 cursor-pointer">G blog</span>
+      </div>
+    </div>
+    <div class="border border-slate-300 rounded p-6 flex flex-col gap-y-8">
+      <div class="text-xl font-bold">What is an API (Application Programming Interface)?</div>
+      <div class="text-md">Everyone is in search of the highest-paying job so as to get into it. And, in the list, the web developer is on the top for years and will remain in the same place due to... <span class="text-blue-500 cursor-pointer hover:text-blue-600">Read more</span></div>
+      <div class="flex gap-x-4">
+        <span class="material-symbols-outlined text-blue-500 ">
+          sell
+          </span>
+          <span class="text-blue-500 cursor-pointer">G blog</span>
+      </div>
+    </div>
+    <div class="border border-slate-300 rounded p-6 flex flex-col gap-y-8">
+      <div class="text-xl font-bold">What is an API (Application Programming Interface)?</div>
+      <div class="text-md">Everyone is in search of the highest-paying job so as to get into it. And, in the list, the web developer is on the top for years and will remain in the same place due to... <span class="text-blue-500 cursor-pointer hover:text-blue-600">Read more</span></div>
+      <div class="flex gap-x-4">
+        <span class="material-symbols-outlined text-blue-500 ">
+          sell
+          </span>
+          <span class="text-blue-500 cursor-pointer">G blog</span>
+      </div>
+    </div>
+    <div class="border border-slate-300 rounded p-6 flex flex-col gap-y-8">
+      <div class="text-xl font-bold">What is an API (Application Programming Interface)?</div>
+      <div class="text-md">Everyone is in search of the highest-paying job so as to get into it. And, in the list, the web developer is on the top for years and will remain in the same place due to... <span class="text-blue-500 cursor-pointer hover:text-blue-600">Read more</span></div>
+      <div class="flex gap-x-4">
+        <span class="material-symbols-outlined text-blue-500 ">
+          sell
+          </span>
+          <span class="text-blue-500 cursor-pointer">G blog</span>
+      </div>
+    </div>
+    <div class="border border-slate-300 rounded p-6 flex flex-col gap-y-8">
+      <div class="text-xl font-bold">What is an API (Application Programming Interface)?</div>
+      <div class="text-md">Everyone is in search of the highest-paying job so as to get into it. And, in the list, the web developer is on the top for years and will remain in the same place due to... <span class="text-blue-500 cursor-pointer hover:text-blue-600">Read more</span></div>
+      <div class="flex gap-x-4">
+        <span class="material-symbols-outlined text-blue-500 ">
+          sell
+          </span>
+          <span class="text-blue-500 cursor-pointer">G blog</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- footer -->
+<div class="relative z-10 bg-white pt-20 lg:pt-[120px]" id="footer">
+  <div class="container">
+      <div class="mx-4 flex flex-wrap justify-between">
+          <div class="w-full px-4 md:pr-0 sm:w-2/3 lg:w-3/12">
+              <div class="mb-10 w-9/12">
+                <div class="flex gap-x-4">
+                  <img src="https://media.geeksforgeeks.org/gfg-gg-logo.svg"/>
+                    <p class="flex  font-medium text-dark hover:text-primary lg:inline-flex text-xl">CompanyName</p>
+                </div>
+                  <p class="my-4 text-lg font-semibold text-dark">Office</p>
+                  <p class="mb-7 text-base text-body-color">
+                    <div class="flex gap-x-2 my-2">
+                      <span class="material-symbols-outlined">
+                        location_on
+                        </span>
+
+                        <span>
+                          A-143, 9th Floor, Sovereign Corporate Tower,<br/>
+                          Sector-136, Noida, Uttar Pradesh - 201305
+                        </span>
+                    </div>
+                    
+                    <div class="flex gap-x-2 my-2">
+                      <span class="material-symbols-outlined">
+                        mail
+                        </span>
+                      <span class="text-primary mt-0 cursor-pointer"><Link class="text-cyan-600 ">feedback@geeksforgeeks.org</Link></span>
+                    </div>
+                  </p>
+              </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/12">
+              <div class="mb-10 w-9/12">
+                  <h4 class="mb-4 text-lg font-semibold text-dark">Company</h4>
+                  <ul>
+                      <li class="mb-2 inline-block text-md leading-loose text-body-color hover:text-primary">
+                          Siddhartha Datta Ahiwale
+                      </li>
+                      <li class="mb-2 inline-block text-md leading-loose text-body-color hover:text-primary">
+                          Siddhartha Datta Ahiwale
+                      </li>
+                      <li class="mb-2 inline-block text-md leading-loose text-body-color hover:text-primary">
+                          Siddhartha Datta Ahiwale
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/12">
+              <div class="mb-10 w-9/12">
+                  <h4 class="mb-4 text-lg font-semibold text-dark">Learn</h4>
+                  <ul>
+                                                <li>
+                          <a to="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary">
+                              Library: Akshay Salve
+                          </a>
+                      </li>
+                                                  <li>
+                          <a to="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary">
+                              Relations: Kunal Malke
+                          </a>
+                      </li>
+                                                  <li>
+                          <a to="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary">
+                              Social Media: Pruthvi Sanjay
+                          </a>
+                      </li>
+                                              </ul>
+              </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/12">
+              <div class="mb-10 w-9/12">
+                  <h4 class="mb-4 text-lg font-semibold text-dark">News</h4>
+                  <ul>
+                                                  <li>
+                          <a to="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary">
+                              Sachin Gulia, Haryana
+                          </a>
+                      </li>
+                                                  <li>
+                          <a to="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary">
+                              Dr Amardeep Sambherwal
+                          </a>
+                      </li>
+                                                  <li>
+                          <a to="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary">
+                              Aadesh Kotecha, Jalana
+                          </a>
+                      </li>
+                                                  <li>
+                          <a to="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary">
+                              Akshay Pawar, Pune
+                          </a>
+                      </li>
+                                              </ul>
+              </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/12">
+              <div class="mb-10 w-9/12">
+                  <h4 class="mb-4 text-lg font-semibold text-dark">Languages</h4>
+                  <ul>
+                                                  <li>
+                          <a to="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary">
+                              Sonu Latiwal, Haryana
+                          </a>
+                      </li>
+                                                  <li>
+                          <a to="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary">
+                              Dr Amardeep Sambherwal
+                          </a>
+                      </li>
+                                                  <li>
+                          <a to="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary">
+                              Aadesh Kotecha, Jalana
+                          </a>
+                      </li>
+                                                  <li>
+                          <a to="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary">
+                              Akshay Pawar, Pune
+                          </a>
+                      </li>
+                                              </ul>
+              </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/12">
+              <div class="mb-10 w-9/12">
+                  <h4 class="mb-4 text-lg font-semibold text-dark">Web development</h4>
+                  <ul>
+                                                  <li>
+                          <a to="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary">
+                              Karanvir Singh, Punjab
+                          </a>
+                      </li>
+                                                  <li>
+                          <a to="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary">
+                              Manu Bishnoi, Haryana
+                          </a>
+                      </li>
+                                                  <li>
+                          <a to="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary">
+                              Pradeep Dahiya, Haryana
+                          </a>
+                      </li>
+                                                  <li>
+                          <a to="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary">
+                              Amit Khangwal, Haryana
+                          </a>
+                      </li>
+                                              </ul>
+              </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/12">
+              <div class="mb-10 w-9/12">
+                  <h4 class="mb-4 text-lg font-semibold text-dark">Contribute</h4>
+                  <ul>
+                                                  <li>
+                          <a to="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary">
+                              Karanvir Singh, Punjab
+                          </a>
+                     
+                                                  <li>
+                          <a to="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary">
+                              Dr Amardeep Sambherwal
+                          </a>
+                      </li>
+                                                  <li>
+                          <a to="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary">
+                              Aadesh Kotecha, Jalana
+                          </a>
+                      </li>
+                                                  <li>
+                          <a to="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary">
+                              Akshay Pawar, Pune
+                          </a>
+                      </li>
+                                              </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <div class="flex py-6 px-3 bg-gray-200 justify-around">
+      <div class='px-3'>
+          <span>© 2023-24 Copyright:</span>
+          <span class="text-gray-600 font-semibold" >CompanyName</span>
+      </div>
+      <div>
+          <span>Designed & Developed By:</span>
+          <a class="text-gray-600 font-semibold" to="/">Stackzeal Pvt ltd</a>
+      </div>
+  </div>
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main__header-div{
+    height: 292px;;
+    
+}
+.svg1{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+.navigation__menu{
+    z-index: 2;
+}
+.brand-button{
+    margin: 5px;
+    padding: 0;
+    position:absolute;
+    top:10px;
+    right:10px;
+    background-color: #95B8AD;
+    margin: 0px;
+    border-radius: 10px;
+    border-style: none;
+}
+.username{
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+.username:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.user-options{
+    font-size: 12px;
+}
+
+.user-img{
+    background-color: #E9ECEF;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    color: black;
+}
+
+.na-title.dropbtn {
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #95B8AD;
+    /* text-align: center; */
+    /* font-size: 2.6em; */
+    font-weight: bold;
+    /* margin: 5px auto; */
+    padding: 5px;
+    border-radius: 10px;
+    border-style: none;
+    border: 0px;
+    padding: 0px;
+    color: white;
+    padding-left: 10px;
+  }
+
+.na-title.dropbtn1 {
+    font-size: 25px;
+    cursor: pointer;
+    background-color: white;
+    /* text-align: center; */
+    /* font-size: 2.6em; */
+    font-weight: bold;
+    /* margin: 5px auto; */
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0px;
+    color: #5B5B5B;
+    padding-left: 10px;
+  }
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:linear-gradient(118.58deg, #003744 -2.67%, #185854 30.25%, #55AD7D 83.53%);;
+    width: 100%;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content1 {
+    display: none;
+    /* position: absolute; */
+    /* background-color:linear-gradient(118.58deg, #003744 -2.67%, #185854 30.25%, #55AD7D 83.53%);; */
+    width: 100%;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+  
+  
+.dropdown-content a:hover {
+    color: white;
+}
+.dropdown-content1 a:hover {
+    color: white;
+}
+
+.na-anchor{
+    text-decoration: none;
+    color: black;
+}
+.show {
+    display: block;
+}
+
+.brand-logo{
+    position: absolute;
+    right:45vw;
+}
+
+.box__search-main{
+    position: relative;
+    bottom: 275px;
+    /* right: 50%; */
+}
+
+.button__search{
+    position: absolute;
+    top: 160px;
+    right: 300px;
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    border-style: none;
+    margin-right: 15px;
+    
+}
+.button__search-icon{
+    font-size: 40px;
+}
+
+
+#icon{
+    position: absolute;
+    top: 150px;
+    right: 20%;
+    height: 90px;
+    width: 781px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    background-color: #95B8AD;
+    background-repeat: no-repeat; 
+    /* background-position: 2px 3px; */
+    border-radius: 12px;
+    border-style: none;
+    color: white;
+}
+
+#icon::placeholder{
+    color:white;
+}
+
+/* Mid section-1 */
+.pricing-card{
+    width: 900px;
+    height: 400px;
+}
+.button__icons1{
+    color: #55AD62;
+    border-style: solid;
+    border-color: #55AD62;
+    width: 124px;
+    height: 51px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.small__text{
+    color: #000000;
+    font-size: 12px;
+}
+
+.big__text{
+    color: black;
+    font-size:34px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+.finalyear__people{
+    color: #55AD62;
+    position: absolute;
+    top: 150px;
+    left: 25px;
+}
+
+.lifetime__access{
+    color: #FF5900;
+    position: absolute;
+    top: 150px;
+    left: 175px;
+}
+.Wishlist{
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
+}
+.Share{
+    position:absolute;
+    bottom: 20px;
+    left: 155px;
+}
+.youtube-card{
+    height: 400px;
+    position: relative;
+    top: 50px;
+    left:35px;
+    width:350px;
+}
+
+/* Mid section-2 */
+.circle_bullets{
+    color: #55AD62;
+}
+.circle_bullets:hover{
+    color: #55AD62;
+}
+.tick__buttons{
+    color: #55AD62;
+}
+.tick__buttons:hover{
+    color: #55AD62;
+}
+.plus__buttons{
+    color: #55AD62;
+}
+.plus__buttons:hover{
+    color: #55AD62;
+}
+
+.course__content{
+    padding-bottom: 5px;
+    border-style:solid;
+    margin-bottom: 5px;
+    border-width: 0px 0px 2px 0px;
+    font-size:25px;
+    color:#5B5B5B
+}
+
+/* faq */
+
+/* carousel */
+.green__text-link{
+    color:#55AD62;
+    text-decoration: none;
+}
+.green__text-link:hover{
+    color:#55AD62;
+}
+
+.quote__icon{
+    color:#55AD62;
+    font-size:70px;
+    text-decoration: none;
+}
+.quote__icon:hover{
+    color:#55AD62;
+    font-size:70px;
+    text-decoration: none;
+}
+.anjali__remark{
+    text-align: center;
+}
+.mycarousel{
+    background-color: #E6F4EC;
+    padding:100px 300px 100px 300px;
+}
+
+/* card-carousel */
+.active__icon{
+    border-style: none;
+    background-color: #44d45a;
+    padding: 5px;
+    border-radius: 10px;
+    color:white;
+}
+.card__carousel{
+    margin-left: 50px;
+}
+
+.carousel-control-prev-icon{
+    position: absolute;
+    left: 0;
+    margin-left: 0;
+}
+.carousel-control-next-icon{
+    position: absolute;
+    right: 0;
+    margin-right: 0;
+}
+
+
+/* Footer */
+.footer__main{
+    margin-top: 100px;
+    padding:30px 0px 40px 40px;
+    background: linear-gradient(154.71deg, #55AD7D -0.65%, #185854 151.04%, #003744 155.64%);
+}
+
+.name{
+    position: relative;
+    top:2px;
+    font-size:10px;
+    margin-left:5px;
+    color:white;
+    font-family:"Times New Roman";
+    font-weight:bold;
+    font-size:20px;
+}
+
+
+.GFG-logo{
+    color: white;
+}
+
+.marker{
+    color: white;
+}
+
+.address{
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+.address__down{
+    margin-left: 35px;
+    color: white;
+    text-decoration: none;
+}
+
+.address:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.footer__headings{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer__headings:hover{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer__headings-sub{
+    color: white;
+    line-height: 1.75;
+    
+    text-decoration: none;
+}
+.footer__headings-sub:hover{
+
+    color: white;
+    text-decoration: none;
+}
+
+.social__media{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.icons__socialmedia{
+    color: white;
+    font-size: 25px;
+    margin-right: 25px;
+}
+
+.footer__sub{
+    padding-top: 15px;
+}
+
+.footer__sub-text{
+    color: #55AD62;
+    font-size: 20px;
+    padding-bottom: 15px;
+    margin-left:15px;
+}
+
+.messaging__icon{
+    position: relative;
+    top:10px;
+    right: 5px;
+    color: white;
+}
+
+.message{
+    margin-left: 6px;
+    text-decoration: none;
+    color: white;
+}
+.message:hover{
+    color: white;
+}
