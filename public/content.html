@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <nav class="bg-white px-2 sm:px-4 py-2.5 dark:bg-blue-600  w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 sticky left-0 top-0">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+          <div class="items-center justify-between hidden w-full md:flex md:w-auto " id="navbar-sticky">
+            <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-blue-600 dark:border-gray-700">
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-slate-100 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-slate-100 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" >Home</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-slate-100 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-slate-100 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-slate-100 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-slate-100 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-slate-100 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-slate-100 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+              </li>
+            </ul>
+          </div>
+       
+      
+        <a href="https://flowbite.com/" class="flex items-center">
+          <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo">
+      </a>
+      
+      <div class="flex ">
+        <span class="material-symbols-outlined m-2 cursor-pointer">
+          search
+          </span>
+          <span class="material-symbols-outlined m-2 cursor-pointer">
+            g_translate
+            </span>
+        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Sign in</button>
+        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+      </button>
+      </div>
+        </div>
+      </nav>
+   <!-- component -->
+   <div class="flex">
+<body class="font-poppins antialiased">
+    <div
+      id="view"
+      class="h-full w-fit flex flex-row sticky left-0 top-10"
+      x-data="{ sidenav: true }"
+
+    >
+      <button
+        @click="sidenav = true"
+        class="p-2 border-2 bg-white rounded-md border-gray-200 shadow-lg text-gray-500 focus:bg-teal-500 focus:outline-none focus:text-white absolute top-0 left-0 sm:hidden"
+      >
+        <svg
+          class="w-5 h-5 fill-current"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <div
+        id="sidebar"
+        class="bg-white h-screen md:block shadow-xl px-3 w-30 md:w-60 lg:w-60 overflow-x-hidden transition-transform duration-300 ease-in-out"
+        x-show="sidenav"
+        @click.away="sidenav = false"
+      >
+        <div class="space-y-6 md:space-y-10 mt-10">
+          <h1 class="font-bold text-4xl text-center md:hidden">
+            D<span class="text-teal-600">.</span>
+          </h1>
+          <h1 class="hidden md:block font-bold text-sm md:text-xl text-center">
+            CompanyName<span class="text-teal-600"></span>
+          </h1>
+          <div id="menu" class="flex flex-col space-y-2">
+            <a
+              href=""
+              class="text-sm font-medium text-gray-700 py-2 px-2 hover:bg-blue-600 hover:text-white hover:text-base rounded-md transition duration-150 ease-in-out"
+            >
+              <svg
+                class="w-6 h-6 fill-current inline-block"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+                ></path>
+              </svg>
+              <span class="">Dashboard</span>
+            </a>
+            <a
+              href=""
+              class="text-sm font-medium text-gray-700 py-2 px-2 hover:bg-blue-600 hover:text-white hover:scale-105 rounded-md transition duration-150 ease-in-out"
+            >
+              <svg
+                class="w-6 h-6 fill-current inline-block"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z"
+                ></path>
+              </svg>
+              <span class="">Products</span>
+            </a>
+            <a
+              href=""
+              class="text-sm font-medium text-gray-700 py-2 px-2 hover:bg-blue-600 hover:text-white hover:scale-105 rounded-md transition duration-150 ease-in-out"
+            >
+              <svg
+                class="w-6 h-6 fill-current inline-block"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
+                <path
+                  fill-rule="evenodd"
+                  d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="">Reports</span>
+            </a>
+            <a
+              href=""
+              class="text-sm font-medium text-gray-700 py-2 px-2 hover:bg-blue-600 hover:text-white hover:scale-105 rounded-md transition duration-150 ease-in-out"
+            >
+              <svg
+                class="w-6 h-6 fill-current inline-block"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"
+                ></path>
+                <path
+                  d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"
+                ></path>
+              </svg>
+              <span class="">Messages</span>
+            </a>
+            <a
+              href=""
+              class="text-sm font-medium text-gray-700 py-2 px-2 hover:bg-blue-600 hover:text-white hover:scale-105 rounded-md transition duration-150 ease-in-out"
+            >
+              <svg
+                class="w-6 h-6 fill-current inline-block"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="">Calendar</span>
+            </a>
+            <a
+              href=""
+              class="text-sm font-medium text-gray-700 py-2 px-2 hover:bg-blue-600 hover:text-white hover:scale-105 rounded-md transition duration-150 ease-in-out"
+            >
+              <svg
+                class="w-6 h-6 fill-current inline-block"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="">Table</span>
+            </a>
+            <a
+              href=""
+              class="text-sm font-medium text-gray-700 py-2 px-2 hover:bg-blue-600 hover:text-white hover:scale-105 rounded-md transition duration-150 ease-in-out"
+            >
+              <svg
+                class="w-6 h-6 fill-current inline-block"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM14 11a1 1 0 011 1v1h1a1 1 0 110 2h-1v1a1 1 0 11-2 0v-1h-1a1 1 0 110-2h1v-1a1 1 0 011-1z"
+                ></path>
+              </svg>
+              <span class="">UI Components</span>
+            </a>
+            <a
+              href=""
+              class="text-sm font-medium text-gray-700 py-2 px-2 hover:bg-blue-600 hover:text-white hover:scale-105 rounded-md transition duration-150 ease-in-out"
+            >
+              <svg
+                class="w-6 h-6 fill-current inline-block"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"
+                ></path>
+              </svg>
+              <span class="">Users</span>
+            </a>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+  </body>
+
+  <!-- content -->
+  <div class="w-fit p-12 flex flex-col gap-y-6">
+    <div class="font-bold text-3xl">GeeksforGeeks Jobathon</div>
+
+    <div class="flex gap-x-4 ">
+        <div class="text-sm">
+            Read time : <span class="text-slate-500">13 mins.</span>
+          </div>
+        <div class="text-sm">
+            Last Updated : <span class="text-slate-500">30 Jan, 2023</span>
+          </div>
+    </div>
+
+    <div class="text-md font-poppins">
+        Jobathon is a 2.5 hrs coding contest targeted toward hiring freshers and interns, organized by GeeksforGeeks on the 21st of every month for organizations that are looking to hire top coders. Till now nearly 50 companies have trusted it to fulfill their hiring needs.
+For this, organizations can directly contact us through our official email address, or they can submit their queries through this form (Form Link), a representative from the GeeksforGeeks’ team will reach out to the organizations.
+    </div>
+
+    <div class="w-96">
+        <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20221020161414/GeeksforGeeks-Jobathon1.png"/>
+    </div>
+
+    <div class="text-md font-poppins">A slot among the other organizations will be provided, where they will be able to interview the top coders, who performed well in the contest. Or, the organizations can also get a custom hiring challenge tailor made for their needs (Email to <span class="text-blue-600 cursor-pointer">hire@geeksforgeeks.org</span> for the details.)</div>
+    <div class="text-md font-poppins"><div class="font-bold text-lg my-2">How to hire with job-a-thon ?</div>
+        Job-A-Thon is a coding contest organized by GeeksforGeeks for organizations that are looking to hire top coders. For this, organizations can directly contact us through our official email address, or they can submit their queries through the below-mentioned form, a representative from the GeeksforGeeks’ team will reach out to the organizations.
+        You can share the information using this form : <span class="text-blue-700 cursor-pointer">Hire with Job-A-Thon:</span></div>
+
+    <div class="font-bold">A company participating in Jobathon will get the following benefits and services:-
+        Posting of openings on the Jobs portal page.
+        <ul class="list-disc px-4">
+            <li class="text-base font-normal py-2">After the relevant info will be shared by the participating organizations, their openings will be listed on the portal.</li>
+            <li class="text-base font-normal py-2">Once the openings are listed on the page, the registration window will open for the candidates.</li>
+          </ul>
+    </div>
+
+    <div class="">
+        <div class="font-bold">Conducting of contest:</div>
+        <div class="my-2">
+            The contest will be conducted on the 21st of every month. A team of GeeksforGeeks will be on standby to check if the contest is going on smoothly and there are no hiccups.
+        </div>
+    </div>
+
+    <div class="font-bold ">The contest will consist of 4 parts: <div class="font-normal">Our team of experienced and talented SDEs has worked on these problems and the structure.</div>
+        <ul class="list-disc px-4">
+            <li class="text-base font-normal py-1">3 DSA coding problems: Easy, Medium Hard – 100 marks</li>
+            <li class="text-base font-normal py-1">5 MCQ on Programming Logic – 25 marks.</li>
+            <li class="text-base font-normal py-1">5 MCQ on Logical Reasoning – 25 marks</li>
+            <li class="text-base font-normal py-1">5 MCQ on Quantitative Aptitude – 25 marks</li>
+            <li class="text-base font-normal py-1">Total 18 questions, Total 175 marks.</li>
+          </ul>
+    </div>
+
+    <div class>
+        <div class="font-bold my-4 text-xl">Shortlisting screening of the relevant profiles:</div>
+        <div class="">
+            Once the contest is conducted, the GeeksforGeeks team will work on to <span class="font-semibold">screen the data of the candidates</span> who appeared in the contest. Then further processes <span class="font-semibold">(Plagiarism check etc)</span> will be implemented to sort out the relevant profiles. <span class="font-semibold">An initial round of shortlisting</span> will be conducted by GeeksforGeeks’ jobs portal team, then the data will be shared with the participating organizations.
+        </div>
+    </div>
+
+    <div class>
+        <div class="font-bold my-4 text-xl">Exclusive Plan:</div>
+        <div class="">
+            A Tailor made contest designed specifically for your organizations need with end to end assistance from team
+GeekesforGeeks during whole process. This is specifically focused on sourcing the best talent for your organization.
+        </div>
+    </div>
+    <ul class="list-disc font-bold text-xl"><span class="my-4">Costing:</span>
+        <div class="mx-4">
+            <li class="my-2">With Promotions – INR 50,000 + GST</li>
+            <li class="my-2">Without promotions – INR 15,000 + GST</li>
+        </div>
+    </ul>
+
+    <div class="font-poppins"><div class="my-2">But for the organizations taking part in Jobathon for the first time, the costing will be Zero!
+    To be a part of this contest, the organizations can send their queries to <span class="text-blue-700 cursor-pointer underline">hire@geeksforgeeks.org directly.</span></div>
+
+
+    <div class="font-poppins"><div class="my-2">Please go through this PDF for more details: <span class="text-blue-700 cursor-pointer underline"> Job-A-Thon-Paid</span></div>
+  </div>
+</div>
+</body>
+</html>
